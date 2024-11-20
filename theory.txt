@@ -1,0 +1,39 @@
+
+
+
+=====Cinfigure Database=======
+
+mysqli ('hostname', 'user_name', 'password', 'database_name');
+
+
+function testName()
+{
+    $x = 10;
+    $y = 20;
+
+    $result = $x+$y;
+
+    return $result;
+}
+
+
+$finalValue = testName(); // 30
+
+
+==============Queries============
+
+SELECT * FROM students;
+
+mysqli_query($connection, $query);
+
+$i = 0;
+
+while(condition){
+    //Statement...
+    //increment/decrement
+}
+
+
+let associativeArray = { 'name': 'rahim', 'roll': 12 }
+
+console.log(associativeArray['roll']);
