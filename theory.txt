@@ -37,3 +37,15 @@ while(condition){
 let associativeArray = { 'name': 'rahim', 'roll': 12 }
 
 console.log(associativeArray['roll']);
+
+
+==============HTTP Method==============
+
+1. GET
+2. POST
+3. PUT
+4. DELETE
+
+===========INSERT Data==========
+
+INSERT INTO students (name, roll, class, phone, address, email) VALUES ('Mr. X', 2, 8, '48674235764', 'Uttara, Dhaka' 'abs@gmail.com');
