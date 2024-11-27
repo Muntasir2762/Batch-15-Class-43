@@ -57,6 +57,8 @@
 
                    if($students){
 
+                    $serialNumber = 1;
+
                     while ($row = mysqli_fetch_assoc($students)){
 
                         $id = $row['id'];
@@ -70,7 +72,7 @@
 
                         echo
                         '<tr>
-                            <th scope="row">'.$id.'</th>
+                            <th scope="row">'.$serialNumber.'</th>
                             <td>'.$name.'</td>
                             <td>'.$class.'</td>
                             <td>'.$roll.'</td>
@@ -78,10 +80,12 @@
                             <td>'.$address.'</td>
                             <td>'.$email.'</td>
                             <td>
-                                <a href="#" class="btn btn-primary">Edit</a>
-                                <a href="#" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?id='.$id.'" class="btn btn-primary">Edit</a>
+                                <a href="delete.php?id='.$id.'" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>';
+
+                        $serialNumber++;
 
                    };
                 }

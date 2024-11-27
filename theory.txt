@@ -49,3 +49,15 @@ console.log(associativeArray['roll']);
 ===========INSERT Data==========
 
 INSERT INTO students (name, roll, class, phone, address, email) VALUES ('Mr. X', 2, 8, '48674235764', 'Uttara, Dhaka' 'abs@gmail.com');
+
+
+==========DELETE Data===========
+
+DELETE FROM students WHERE id = 1;
+
+
+========EDIT-UPDATE Data========
+
+SELECT * FROM students WHERE id = 9;
+
+UPDATE students SET name = "Md Rabbi Islam", roll = 1, class= 5, phone = "53262346", address = "Uttara", email = "ahf@gmail.com" WHERE id = 9;
